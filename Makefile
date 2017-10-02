@@ -7,3 +7,9 @@ serve:
 publish:
 	git push origin master
 	git push origin master:gh-pages
+
+publish-to-ipfs:
+	mkdir -p build
+	cp -r static build/.
+	cp index.html build/.
+	ipfs add -q -r build | tail -n1
