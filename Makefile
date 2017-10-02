@@ -5,4 +5,5 @@ serve:
 		@python -m SimpleHTTPServer "$(PORT)" >/dev/null
 
 publish:
+	git push origin master
 	git push origin master:gh-pages

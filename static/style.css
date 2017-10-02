@@ -774,6 +774,11 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
   min-height: 300px;
 }
 
+.paper-listing > div {
+  /*display: inline-block;*/
+  /*height: 100%;*/
+}
+
 section.main .content .markdown .paper-listing h3 {
   font-family: 'Merriweather', serif;
   margin: 0px 0px;
@@ -782,12 +787,19 @@ section.main .content .markdown .paper-listing h3 {
 
 .paper-thumb {
   width: 30%;
-  float: left;
-  margin-right: 25px;
+  float: right;
+  margin-left: 25px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .paper-thumb img {
   border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.paper-thumb a.button {
+  text-align: center;
 }
 
 a.button {
